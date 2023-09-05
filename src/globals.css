@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --border: #1f2937;
+    --background: #030712;
+    --foreground: #f9fafb;
+    --muted: #1f2937;
+    --muted-foreground: #9ca3af;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
