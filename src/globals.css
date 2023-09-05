@@ -6,6 +6,13 @@
 
 @layer base {
   :root {
+    --border: #e5e7eb;
+    --background: #e8e8e8;
+    --foreground: #030712;
+    --muted: #d5d5d5;
+    --muted-foreground: #6b7280;
+  }
+  .dark {
     --border: #1f2937;
     --background: #030712;
     --foreground: #f9fafb;

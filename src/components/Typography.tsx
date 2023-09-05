@@ -86,7 +86,9 @@ export function Blockquote({
   children: React.ReactNode;
 }) {
   return (
-    <blockquote className={`${className} mt-6 border-l-2 border-border pl-6 italic`}>
+    <blockquote
+      className={`${className} mt-6 border-l-2 border-border pl-6 italic`}
+    >
       "{children}"
     </blockquote>
   );
@@ -166,13 +168,15 @@ export function ExternalLink({
   href: string;
 }) {
   return (
-    <a
-      className={`${className} relative after:absolute after:bg-foreground after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-400`}
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {children || href}
-    </a>
+    
+      <a
+        className={`${className} relative after:absolute after:bg-foreground after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-400`}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {children || href}
+      </a>
+    
   );
 }
